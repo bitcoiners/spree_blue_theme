@@ -5,6 +5,8 @@ module SpreeBlueTheme
     config.autoload_paths += %W(#{config.root}/lib)
 
     def self.activate
+      require 'preferences'
+
       Dir.glob(File.join(File.dirname(__FILE__), "../app/overrides/*.rb")) do |c|
         Rails.application.config.cache_classes ? require(c) : load(c)
       end

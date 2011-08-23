@@ -258,7 +258,8 @@ legend {
 }
 body {
   margin-top: 10px;
-  background: #ffffff url(/assets/body-back.png) top left repeat-x;
+  background: #ffffff url(/assets/body-back.png) top left;
+  background-size: 100% auto;
 }
 div.left {
   float: left;

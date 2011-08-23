@@ -1,0 +1,9 @@
+/* spree_blue_theme */
+body {
+    background-image: url("/assets/body-back.png");
+}
+
+#header h1 {
+    left: 300px;
+}
+/* end of spree_blue_theme */

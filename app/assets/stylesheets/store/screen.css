@@ -276,7 +276,7 @@ a { outline: none; }
   min-height: 600px;
   position: relative;
 }
-body.two-col #wrapper { background-image: url(/assets/wrapper-back.png); }
+body.two-col #wrapper { background-image: url(/assets/wrapper-back-2.png); }
 .container {
   width: 950px;
   margin: 0 auto;

@@ -6,4 +6,10 @@ body {
 #header h1 {
     left: 300px;
 }
+
+#header #logo {
+    left: 80px;
+    position: absolute;
+    top: 25px;
+}
 /* end of spree_blue_theme */

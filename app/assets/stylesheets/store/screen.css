@@ -1,3 +1,4 @@
+/* spree_blue_theme */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
@@ -273,7 +274,7 @@ a { outline: none; }
 #wrapper {
   background: transparent url(/assets/wrapper-back.png) top center no-repeat;
   padding: 25px 20px 20px;
-  min-height: 600px;
+  min-height: 700px;
   position: relative;
 }
 body.two-col #wrapper { background-image: url(/assets/wrapper-back-2.png); }
@@ -921,3 +922,13 @@ div#checkout #checkout-summary {
   width: 180px;
 }
 
+#header a{
+    color: black;
+}
+#header a:hover {
+    color: red;
+}
+
+
+
+/* end of spree_blue_theme */

@@ -7,6 +7,15 @@ Deface::Override.new(:virtual_path => 'layouts/spree_application',
                      <% end %>
                      })
 
+Deface::Override.new(:virtual_path => 'layouts/spree_application',
+                     :name => 'add_signup_link',
+                     :insert_top => "#nav-bar[data-hook]",
+                     :text => %q{
+                     <% if current_user.nil? %>
+                       <li id="signup-link" data-hook><%= link_to t('create_a_new_account') , signup_path %></li>
+                     <% end %>
+                     })
+
 Deface::Override.new(:virtual_path => 'shared/_nav_bar',
                      :name => 'remove_search_bar',
                      :remove => "#search-bar[data-hook]")

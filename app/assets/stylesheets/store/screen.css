@@ -274,7 +274,7 @@ a { outline: none; }
 #wrapper {
   background: transparent url(/assets/wrapper-back.png) top center no-repeat;
   padding: 25px 20px 20px;
-  min-height: 700px;
+  min-height: 900px;
   position: relative;
 }
 body.two-col #wrapper { background-image: url(/assets/wrapper-back-2.png); }

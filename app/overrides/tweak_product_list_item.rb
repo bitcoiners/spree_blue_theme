@@ -3,8 +3,10 @@ Deface::Override.new(:virtual_path => 'shared/_products',
                      :replace => "[data-hook='products_list_item']",
                      :text => %q{<li id="product_<%= product.id %>" data-hook="products_list_item">
                                    <%= link_to(product, :class => 'info') do %>
-                                     <%= product.name %>
-                                     <span class="price selling"><%= product_price(product) %></span>
+                                     <b><%= product.name %></b>
+                                     <% @market = product.market_size %>
+                                     <span><%= t('tradable.bid_quantity') + @market[:bid_quantity].to_s %></span>
+                                     <span><%= t('tradable.ask_quantity') + @market[:ask_quantity].to_s %></span>
                                    <% end %>
                                    <%= link_to small_image(product), product %>
                                  </li>})

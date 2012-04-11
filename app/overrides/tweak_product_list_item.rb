@@ -1,4 +1,4 @@
-Deface::Override.new(:virtual_path => 'shared/_products',
+Deface::Override.new(:virtual_path => 'spree/shared/_products',
                      :name => 'tweak_product_list_item',
                      :replace => "[data-hook='products_list_item']",
                      :text => %q{<li id="product_<%= product.id %>" data-hook="products_list_item">
